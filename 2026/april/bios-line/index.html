@@ -133,6 +133,21 @@
   footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid rgba(0,0,0,.06)}
 
   /* ---- responsive ---- */
+  .ig-band{background:var(--cream);padding:80px 0;text-align:center;border-bottom:1px solid rgba(0,0,0,.04)}
+  .ig-band h2{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:clamp(36px,5vw,56px);margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase}
+  .ig-band .sub{color:var(--muted);font-style:italic;margin:0 0 36px}
+  .ig-band .ovals{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:920px;margin:0 auto;padding:0 32px}
+  .ig-band .oval{border:2px solid var(--orange);border-radius:50%;aspect-ratio:1.9/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px}
+  .ig-band .oval .l{font-size:10px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;color:var(--muted)}
+  .ig-band .oval .v{font-family:Anton,Impact,sans-serif;font-size:36px;line-height:1;margin-top:6px;color:var(--orange)}
+  .ig-band .types{max-width:760px;margin:36px auto 0;padding:0 32px;text-align:left}
+  .ig-band .types h4{margin:0 0 12px;font-size:11px;letter-spacing:.22em;color:var(--muted);font-weight:700;text-transform:uppercase;text-align:center}
+  .ig-band .type-row{display:grid;grid-template-columns:80px 1fr 50px;gap:12px;align-items:center;font-size:13px;margin-bottom:8px}
+  .ig-band .type-row .lbl{font-weight:600}
+  .ig-band .type-row .bar{height:18px;background:#E5DAC1;border-radius:3px;overflow:hidden}
+  .ig-band .type-row .fill{height:100%;background:var(--orange)}
+  .ig-band .footnote{margin-top:28px;font-size:11px;font-style:italic;color:var(--muted)}
+  @media(max-width:700px){.ig-band .ovals{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:900px){
     .container{padding:0 20px}
     .section{padding:64px 0}
@@ -272,7 +287,7 @@
 <!-- ===== STATS BAND ===== -->
 <section class="stats-band">
   <h2>Social Media Stats</h2>
-  <div class="sub">Facebook · April 2026</div>
+  <div class="sub">Facebook · April 2026 · BIOS Line is a Facebook-first brand</div>
   <div class="ovals">
     <div class="oval"><div class="l">Followers</div><div class="v">21.4K</div></div>
     <div class="oval"><div class="l">Views</div><div class="v">163.5K</div></div>
@@ -282,6 +297,27 @@
     <div class="oval"><div class="l">Conversations</div><div class="v">304</div></div>
   </div>
   <div class="footnote">Figures from Meta Business Suite · Apr 1 – Apr 30, 2026 · Followers shown as lifetime total</div>
+</section>
+
+<!-- ===== IG STATS (BIOS Line, mobile app — IG not connected to Business Manager) ===== -->
+<section class="ig-band">
+  <div class="container">
+    <h2>Instagram</h2>
+    <div class="sub">@biosline_kosova · April 2026 · pulled from IG mobile app</div>
+    <div class="ovals">
+      <div class="oval"><div class="l">Views</div><div class="v">9.7K</div></div>
+      <div class="oval"><div class="l">Reach</div><div class="v">1.6K</div></div>
+      <div class="oval"><div class="l">Profile visits</div><div class="v">303</div></div>
+      <div class="oval"><div class="l">Link taps</div><div class="v">29</div></div>
+    </div>
+    <div class="types">
+      <h4>Views by content type</h4>
+      <div class="type-row"><div class="lbl">Posts</div><div class="bar"><div class="fill" style="width:70.4%"></div></div><div style="text-align:right;font-weight:700">70.4%</div></div>
+      <div class="type-row"><div class="lbl">Stories</div><div class="bar"><div class="fill" style="width:22.8%"></div></div><div style="text-align:right;font-weight:700">22.8%</div></div>
+      <div class="type-row"><div class="lbl">Reels</div><div class="bar"><div class="fill" style="width:6.8%"></div></div><div style="text-align:right;font-weight:700">6.8%</div></div>
+    </div>
+    <div class="footnote">IG views: 74.4% from existing followers / 25.6% non-followers. Profile activity ↑17% vs March (visits +11%, link taps +93%).</div>
+  </div>
 </section>
 
 <!-- ===== AUDIENCE ===== -->
