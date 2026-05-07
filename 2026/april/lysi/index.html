@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LYSI — Social Media + Ads Report — April 2026</title>
+<meta name="description" content="Polar Bear Agency · Social media + paid ads performance report for LYSI Kosova, April 1 – May 1, 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4ECDE;--orange:#E8401E;--orange-light:#F5A582;--orange-dark:#9C2A0E;--dark:#1A1A1A;--muted:#6B6B6B;--line:#EADCC4;--white:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--dark);background:var(--cream);font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--orange);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .display{font-family:Anton,Impact,sans-serif;letter-spacing:0.02em;line-height:0.92;text-transform:uppercase}
+  .container{max-width:1200px;margin:0 auto;padding:0 32px}
+  .section{padding:96px 0;position:relative;overflow:hidden}
+  .section + .section{border-top:1px solid rgba(0,0,0,.04)}
+  .arc{position:absolute;border:1px solid var(--orange);border-radius:50%;pointer-events:none}
+  .label{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+  .h-display{color:var(--orange);font-size:clamp(56px,9vw,128px);margin:0}
+  .h-section{color:var(--orange);font-size:clamp(40px,6vw,76px);margin:0 0 12px}
+  .h-sub{color:var(--dark);font-weight:600;font-size:20px;margin:0}
+  .small{font-size:13px;color:var(--muted)}
+  .crumb{padding:18px 0 0;font-size:13px;color:var(--muted)}
+  .crumb a{color:var(--muted);font-weight:500}
+  .crumb a:hover{color:var(--orange)}
+  .crumb .cur{color:var(--orange);font-weight:600}
+  .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0 80px;position:relative}
+  .hero .arc-1{width:780px;height:780px;left:-260px;top:-160px}
+  .hero .arc-2{width:680px;height:680px;right:-160px;top:240px}
+  .hero-title span{display:block}
+  .hero-bottom{margin-top:48px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .badge{border:1px solid var(--orange);border-radius:999px;padding:10px 22px;font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--dark);text-transform:uppercase;display:inline-block}
+  .brand-block{text-align:right}
+  .brand-block .brand{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:42px;letter-spacing:.04em}
+  .brand-block .month{color:var(--dark);font-style:italic}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+  .kpi .label{margin-bottom:8px;display:block}
+  .kpi .num{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:48px;line-height:1;margin:6px 0 8px}
+  .kpi .sub{font-size:12px;color:var(--muted)}
+  .cols{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+  .cols.flip{grid-template-columns:1.4fr 1fr}
+  .goal-list{display:flex;flex-direction:column;gap:18px}
+  .goal{display:flex;gap:16px;align-items:flex-start}
+  .goal .num{flex:0 0 36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .goal h3{margin:4px 0 4px;font-size:16px;font-weight:700}
+  .goal p{margin:0;font-size:14px;line-height:1.5}
+  .feed-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .feed-grid .tile{aspect-ratio:1/1;background:#000;overflow:hidden;border-radius:6px}
+  .feed-grid .tile img{width:100%;height:100%;object-fit:cover;display:block}
+  .feed-grid .stat-tile{aspect-ratio:1/1;background:var(--orange);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:6px;text-align:center;padding:8px}
+  .stat-tile .big{font-family:Anton,Impact,sans-serif;font-size:42px;line-height:1}
+  .stat-tile .sm{font-size:11px;letter-spacing:.18em;font-weight:700;margin-top:4px}
+  .top-list{display:flex;flex-direction:column;gap:12px}
+  .top-row{display:grid;grid-template-columns:64px 32px 1fr auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px}
+  .top-row img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+  .top-row .rank{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px}
+  .top-row .meta strong{display:block;font-size:14px}
+  .top-row .meta span{display:block;font-size:12px;color:var(--muted)}
+  .top-row .views{text-align:right}
+  .top-row .views b{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px;display:block;line-height:1}
+  .top-row .views .small{font-size:11px}
+  .infl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+  .infl{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .infl strong{display:block;font-size:14px}
+  .infl .handle{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+  .infl .stats{margin-top:6px;font-size:13px}
+  .infl .v{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px;line-height:1}
+  .ad-table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .ad-table th{background:var(--orange);color:#fff;text-align:left;font-size:13px;font-weight:700;padding:12px 16px}
+  .ad-table th.num,.ad-table td.num{text-align:right}
+  .ad-table td{padding:12px 16px;font-size:14px;border-top:1px solid var(--line)}
+  .ad-table tr:nth-child(odd) td{background:#FBF7EE}
+  .ad-table .top-cpr{color:var(--orange);font-weight:700}
+  .stats-band{background:var(--orange);color:#fff;padding:96px 0;text-align:center}
+  .stats-band h2{font-family:Anton,Impact,sans-serif;color:#fff;font-size:clamp(44px,6vw,72px);margin:0 0 8px;letter-spacing:.04em}
+  .stats-band .sub{opacity:.85;font-style:italic;margin:0 0 48px}
+  .stats-band .ovals{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto;padding:0 32px}
+  .stats-band .oval{border:2px solid #fff;border-radius:50%;aspect-ratio:1.9/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px}
+  .stats-band .oval .l{font-size:11px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;opacity:.95}
+  .stats-band .oval .v{font-family:Anton,Impact,sans-serif;font-size:46px;line-height:1;margin-top:6px}
+  .stats-band .footnote{margin-top:32px;font-size:12px;font-style:italic;opacity:.85}
+  .age{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+  .age-row{display:grid;grid-template-columns:60px 1fr 50px;align-items:center;gap:14px;font-size:14px}
+  .age-row .lbl{font-weight:600}
+  .age-row .bar{height:24px;background:#E5DAC1;border-radius:4px;position:relative;overflow:hidden}
+  .age-row .fill{height:100%;background:var(--orange-light)}
+  .age-row.top .fill{background:var(--orange)}
+  .age-row .pct{font-weight:700;text-align:right}
+  .geo{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:18px}
+  .geo h4{margin:0 0 10px;font-size:13px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+  .geo .row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+  .geo .row:first-of-type{border-top:0}
+  .geo .row strong{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:18px}
+  .recs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+  .rec{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;gap:14px;align-items:flex-start}
+  .rec .num{flex:0 0 36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .rec h3{margin:4px 0 6px;font-size:14px;color:var(--orange);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .rec p{margin:0;font-size:13.5px;line-height:1.55}
+  .thanks{padding:140px 0;text-align:center;position:relative}
+  .thanks .arc-1{width:540px;height:540px;left:50%;top:60px;transform:translateX(-50%)}
+  .thanks h1{margin:0;color:var(--orange);font-family:Anton,Impact,sans-serif;font-size:clamp(86px,16vw,200px);line-height:.95;letter-spacing:.02em}
+  .thanks .badge{margin-top:24px}
+  .thanks .contact{margin-top:18px;color:var(--orange);font-weight:700;letter-spacing:.04em}
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid rgba(0,0,0,.06)}
+  @media(max-width:900px){
+    .container{padding:0 20px}
+    .section{padding:64px 0}
+    .cols,.cols.flip{grid-template-columns:1fr;gap:24px}
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .feed-grid{grid-template-columns:repeat(3,1fr)}
+    .stats-band .ovals{grid-template-columns:1fr 1fr}
+    .recs,.infl-grid{grid-template-columns:1fr}
+    .top-row{grid-template-columns:48px 28px 1fr auto;padding:8px 12px}
+    .top-row img{width:48px;height:48px}
+  }
+</style>
+</head>
+<body>
+
+<div class="container crumb">
+  <a href="../../../">A-Life Reports</a> &nbsp;›&nbsp;
+  <a href="../../">2026</a> &nbsp;›&nbsp;
+  <a href="../">April</a> &nbsp;›&nbsp;
+  <span class="cur">LYSI</span>
+</div>
+
+<section class="hero">
+  <div class="arc arc-1"></div>
+  <div class="arc arc-2"></div>
+  <div class="container">
+    <h1 class="display h-display hero-title">
+      <span>Social</span><span>Media</span><span>+ Ads</span><span style="color:var(--orange)">Report</span>
+    </h1>
+    <div class="hero-bottom">
+      <span class="badge">Presented by Polar Bear Agency</span>
+      <div class="brand-block">
+        <div class="brand">LYSI</div>
+        <div class="month">April 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container cols">
+    <h2 class="display h-section">Social<br>Media<br>Goals</h2>
+    <div class="goal-list">
+      <div class="goal"><div class="num">1</div><div><h3>Forcimi i pozicionit "Premium nga Islanda"</h3><p>Të mbajmë LYSI si standardin e pastërtisë, certifikimit dhe efikasitetit në kategorinë e suplementeve për familjen.</p></div></div>
+      <div class="goal"><div class="num">2</div><div><h3>Skalimi i strategjisë me influencerë</h3><p>Të zgjerojmë rrjetin e content creators që rezonon me prindër dhe nëna, duke ruajtur autenticitetin e mesazhit.</p></div></div>
+      <div class="goal"><div class="num">3</div><div><h3>Konvertimi i traffic-ut në bisedë</h3><p>Të lidhim me efikasitet vizitorët e profilit në biseda të personalizuara DM për të shpjeguar produktin pikë për pikë.</p></div></div>
+      <div class="goal"><div class="num">4</div><div><h3>Konsistencë në postim</h3><p>Të mbajmë ritmin prej 3–4 postimeve në javë me mesazhe që mbulojnë: shëndet, fëmijë, imunitet, shije.</p></div></div>
+      <div class="goal"><div class="num">5</div><div><h3>Shtrirja gjeografike Albania-Kosovo</h3><p>Audienca primare aktuale është Tirana — të vazhdojmë t'i shërbejmë asaj segmentit ndërsa rritim depërtimin në Kosovë.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container cols flip">
+    <div class="feed-grid">
+      <a class="tile" href="https://www.instagram.com/p/DXzFYtSE0mT/" target="_blank"><img src="thumbs/01_DXzFYtSE0mT.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXt_OveCAMz/" target="_blank"><img src="thumbs/02_DXt_OveCAMz.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXo_8FoAHQe/" target="_blank"><img src="thumbs/03_DXo_8FoAHQe.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXhFrR7DOk2/" target="_blank"><img src="thumbs/04_DXhFrR7DOk2.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXb8HRmD9kU/" target="_blank"><img src="thumbs/05_DXb8HRmD9kU.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXPEDAJDYr4/" target="_blank"><img src="thumbs/06_DXPEDAJDYr4.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXJ6Z2NDcm7/" target="_blank"><img src="thumbs/07_DXJ6Z2NDcm7.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DXFAQBOk_ee/" target="_blank"><img src="thumbs/08_DXFAQBOk_ee.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DW9AshkAdmP/" target="_blank"><img src="thumbs/09_DW9AshkAdmP.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DW4BZ7xDYIv/" target="_blank"><img src="thumbs/10_DW4BZ7xDYIv.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DWyM5TMCB_T/" target="_blank"><img src="thumbs/11_DWyM5TMCB_T.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DWvoJaagfT6/" target="_blank"><img src="thumbs/12_DWvoJaagfT6.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DWq6FO4DRoD/" target="_blank"><img src="thumbs/13_DWq6FO4DRoD.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DWlwhMDgVwe/" target="_blank"><img src="thumbs/14_DWlwhMDgVwe.jpg" alt=""></a>
+      <div class="stat-tile"><div class="big">14</div><div class="sm">Postime<br>Prill</div></div>
+      <div class="stat-tile" style="background:var(--orange-light)"><div class="big" style="color:var(--orange-dark)">4</div><div class="sm" style="color:var(--orange-dark)">Influencer<br>Collabs</div></div>
+    </div>
+    <div>
+      <h2 class="display h-section">Social<br>Media<br>Feed</h2>
+      <p class="h-sub" style="margin-top:14px">Prill — LYSI</p>
+      <p class="small" style="margin-top:6px">14 postime në Instagram (@lysikosova) plus 4 collab-e me content creators. Klikoni mbi imazhet për të hapur postimet origjinale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Top Postet</h2>
+    <p class="small" style="font-style:italic">Renditja sipas engagement (likes + comments) — Instagram · Prill 2026</p>
+
+    <h3 style="margin-top:32px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700">Brand-owned (@lysikosova)</h3>
+    <div class="top-list">
+      <div class="top-row"><img src="thumbs/10_DW4BZ7xDYIv.jpg" alt=""><span class="rank">#1</span><div class="meta"><strong>Hapat e parë të fëmijës</strong><span>Apr 8 · Vaj merluci për bebe</span></div><div class="views"><b>73</b><div class="small">likes</div></div></div>
+      <div class="top-row"><img src="thumbs/08_DXFAQBOk_ee.jpg" alt=""><span class="rank">#2</span><div class="meta"><strong>Loja është puna e fëmijëve</strong><span>Apr 13 · LysiKids</span></div><div class="views"><b>29</b><div class="small">likes</div></div></div>
+      <div class="top-row"><img src="thumbs/07_DXJ6Z2NDcm7.jpg" alt=""><span class="rank">#3</span><div class="meta"><strong>"Edhe pak, mami!"</strong><span>Apr 15 · Lysi Taste</span></div><div class="views"><b>27</b><div class="small">eng.</div></div></div>
+      <div class="top-row"><img src="thumbs/11_DWyM5TMCB_T.jpg" alt=""><span class="rank">#4</span><div class="meta"><strong>Immune Max — mburojë maksimale</strong><span>Apr 6 · ImmuneMax</span></div><div class="views"><b>22</b><div class="small">likes</div></div></div>
+      <div class="top-row"><img src="thumbs/06_DXPEDAJDYr4.jpg" alt=""><span class="rank">#5</span><div class="meta"><strong>Më shumë se thjesht rritje</strong><span>Apr 17 · LysiMango</span></div><div class="views"><b>17</b><div class="small">likes</div></div></div>
+    </div>
+
+    <h3 style="margin-top:48px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700">Influencer collabs (tagged @lysikosova)</h3>
+    <div class="infl-grid">
+      <div class="infl"><div><strong>Diola Dosti — vaji pa mërkur</strong><span class="handle">@dioladostiofficial · Apr 19 · Reel</span><div class="stats"><b class="v">2,170</b> likes · 32 comments</div></div></div>
+      <div class="infl"><div><strong>Liridona Vejseli — imuniteti i fëmijës</strong><span class="handle">@liridonavejseli · Apr 17 · Reel</span><div class="stats"><b class="v">1,494</b> likes · 26 comments</div></div></div>
+      <div class="infl"><div><strong>Liridona Vejseli — Omega-3 për fëmijë</strong><span class="handle">@liridonavejseli · May 1 · Reel</span><div class="stats"><b class="v">814</b> likes · 29 comments</div></div></div>
+      <div class="infl"><div><strong>GoodyFoody — pse Lysi</strong><span class="handle">@_goodyfoody_ · Apr 11 · Reel</span><div class="stats"><b class="v">557</b> likes · 7 comments</div></div></div>
+    </div>
+    <p class="small" style="margin-top:16px"><strong style="color:var(--orange)">Total influencer engagement: 5,035 likes / 94 comments</strong> — afërsisht 30× më shumë se postimet brand-owned.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Ad Performance</h2>
+    <p class="small" style="font-style:italic">Meta Ads · April 1 — April 30, 2026 · 2 fushata aktive</p>
+    <div class="kpis">
+      <div class="kpi"><span class="label">Total spend</span><div class="num">€159</div><div class="sub">across 2 campaigns</div></div>
+      <div class="kpi"><span class="label">Conversations (paid)</span><div class="num">108</div><div class="sub">at €0.71 / result</div></div>
+      <div class="kpi"><span class="label">Profile visits</span><div class="num">1,493</div><div class="sub">at €0.055 / visit</div></div>
+      <div class="kpi"><span class="label">Total reach</span><div class="num">54.4K</div><div class="sub">people · 142K impressions</div></div>
+    </div>
+    <div style="margin-top:32px;overflow-x:auto">
+      <table class="ad-table">
+        <thead><tr><th>Campaign</th><th>Objective</th><th class="num">Spend</th><th class="num">Results</th><th class="num">Cost / result</th><th class="num">CTR</th><th class="num">Reach</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Lysi Message</strong></td><td>Click-to-Message</td><td class="num">€76.50</td><td class="num">108</td><td class="num">€0.71</td><td class="num">0.61%</td><td class="num">13,639</td></tr>
+          <tr><td><strong>Traffic</strong></td><td>Profile Visits</td><td class="num">€82.13</td><td class="num">1,493</td><td class="num top-cpr">€0.055</td><td class="num">1.46%</td><td class="num">40,736</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container cols">
+    <div>
+      <h2 class="display h-section">Ad Cost<br>Efficiency</h2>
+      <p style="font-size:14px;line-height:1.55;margin-top:18px;max-width:380px"><strong>Traffic</strong> është fushata më efikase për cost-per-event (€0.055/profile visit), ndërsa <strong>Lysi Message</strong> sjell biseda të vërteta DM me cilësi të lartë me €0.71/result. Sherbejnë qëllime të ndryshme — të dyja duhen mbajtur, por testimi i mëtejshëm i creatives mund të ulë akoma më shumë CPR-in e Message.</p>
+    </div>
+    <img src="chart_lysi_cpr.png" alt="Cost per result by LYSI campaign" style="width:100%;border-radius:10px">
+  </div>
+</section>
+
+<section class="stats-band">
+  <h2>Social Media Stats</h2>
+  <div class="sub">Instagram · April 2026 · @lysikosova</div>
+  <div class="ovals">
+    <div class="oval"><div class="l">Followers</div><div class="v">39.7K</div></div>
+    <div class="oval"><div class="l">Views</div><div class="v">609.3K</div></div>
+    <div class="oval"><div class="l">Reach</div><div class="v">43.9K</div></div>
+    <div class="oval"><div class="l">Interactions</div><div class="v">9.1K</div></div>
+    <div class="oval"><div class="l">Link Clicks</div><div class="v">1.2K</div></div>
+    <div class="oval"><div class="l">Conversations</div><div class="v">579</div></div>
+  </div>
+  <div class="footnote">Figures from Meta Business Suite · Apr 1 – Apr 30, 2026 · IG followers shown as lifetime · Conversations: 390 organic + 149 paid</div>
+</section>
+
+<section class="section">
+  <div class="container cols">
+    <div>
+      <h2 class="display h-section">Social<br>Media<br>Audience</h2>
+      <p class="small" style="margin-top:14px">Instagram · Lifetime followers</p>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom:6px">Mosha</div>
+      <div class="age">
+        <div class="age-row top"><div class="lbl">25–34</div><div class="bar"><div class="fill" style="width:100%"></div></div><div class="pct">41%</div></div>
+        <div class="age-row"><div class="lbl">35–44</div><div class="bar"><div class="fill" style="width:93%"></div></div><div class="pct">38%</div></div>
+        <div class="age-row"><div class="lbl">45–54</div><div class="bar"><div class="fill" style="width:30%"></div></div><div class="pct">12%</div></div>
+        <div class="age-row"><div class="lbl">55–64</div><div class="bar"><div class="fill" style="width:10%"></div></div><div class="pct">4%</div></div>
+        <div class="age-row"><div class="lbl">18–24</div><div class="bar"><div class="fill" style="width:8%"></div></div><div class="pct">3%</div></div>
+        <div class="age-row"><div class="lbl">65+</div><div class="bar"><div class="fill" style="width:5%"></div></div><div class="pct">2%</div></div>
+      </div>
+      <p style="margin-top:20px;font-size:14px;line-height:1.55"><strong>Audienca primare:</strong> 25–34 dhe 35–44 vjeç. Të bashkuara mbulojnë <strong style="color:var(--orange)">~79%</strong> të audiencës. Profili është <strong>72% femra / 28% meshkuj</strong> — më pak skewed nga gjinia se BIOS Line.</p>
+
+      <div class="geo">
+        <h4>Top Cities</h4>
+        <div class="row"><span>Tirana, Albania</span><strong>25.2%</strong></div>
+        <div class="row"><span>Pristina, Kosovo</span><strong>4.7%</strong></div>
+        <div class="row"><span>Durrës, Albania</span><strong>3.4%</strong></div>
+        <div class="row"><span>Elbasan, Albania</span><strong>2.7%</strong></div>
+        <div class="row"><span>Vlorë, Albania</span><strong>2.1%</strong></div>
+      </div>
+      <p class="small" style="margin-top:10px"><strong>Vërejtje:</strong> audienca është e dominuar nga Shqipëria (Tirana 25%) — Kosova përbën vetëm 16% të vendeve. Kjo e dallon plotësisht LYSI-n nga BIOS Line (që është Kosova-dominant).</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Recommendations</h2>
+    <p class="small" style="font-style:italic">Hapat për muajin e ardhshëm</p>
+    <div class="recs">
+      <div class="rec"><div class="num">1</div><div><h3>Skalo Influencer Strategy</h3><p>4 collab-e gjeneruan 5,035 likes — 30× postimet e brendit. Diola Dosti vetëm solli 2,170 likes me një Reel. Plani: 6–8 collab-e/muaj, përzierje creator-ësh të mëdhenj (Diola, Liridona) + nano (GoodyFoody).</p></div></div>
+      <div class="rec"><div class="num">2</div><div><h3>Ngrit engagement-in brand-owned</h3><p>Postimet e brendit kanë mesatarisht 18 likes. Testo 1–2 Reel/javë në vend të vetëm static images — collab-et tregojnë që Reel-et performojnë në mënyrë eksponenciale.</p></div></div>
+      <div class="rec"><div class="num">3</div><div><h3>Vazhdo Traffic + optimize Message</h3><p>€0.055/profile visit nga Traffic është shumë e fortë. Mbaje buxhetin. Për Lysi Message, testo 2 angles të reja kreative — një nënë-fokusuar, një imunitet-fokusuar — dhe ndalo ato me CPR &gt; €1.</p></div></div>
+      <div class="rec"><div class="num">4</div><div><h3>Hap kapitullin Kosovo</h3><p>Audienca aktuale është 16% Kosovo, por ad-spending është aty. Konsidero një fushatë gjeo-targetuar specifikisht për Prishtinë/Pejë/Prizren me creative të lokalizuar.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="thanks">
+  <div class="arc arc-1"></div>
+  <div class="container" style="position:relative">
+    <h1>Thank<br>You</h1>
+    <div><span class="badge">Polar Bear Agency</span></div>
+    <div class="contact">CONTACT US:&nbsp; <a href="mailto:diell@polarbearagency.com">diell@polarbearagency.com</a></div>
+  </div>
+</section>
+
+<footer>LYSI — Social Media + Ads Report — April 2026 · Built by Polar Bear Agency</footer>
+</body>
+</html>

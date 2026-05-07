@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 — A-Life Medica Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4ECDE;--orange:#E8401E;--dark:#1A1A1A;--muted:#6B6B6B;--line:#EADCC4;--white:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,sans-serif;color:var(--dark);background:var(--cream);font-size:16px;-webkit-font-smoothing:antialiased;min-height:100vh}
+  a{color:var(--orange);text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 32px}
+  .arc{position:absolute;border:1px solid var(--orange);border-radius:50%;pointer-events:none}
+  .crumb{padding:24px 0 0;font-size:13px;color:var(--muted)}
+  .crumb a{color:var(--muted);font-weight:500}
+  .crumb a:hover{color:var(--orange)}
+  .crumb .cur{color:var(--orange);font-weight:600}
+  .hero{padding:48px 0 32px;position:relative;overflow:hidden}
+  .hero .arc-1{width:580px;height:580px;left:-200px;top:-160px}
+  h1.title{color:var(--orange);font-family:Anton,Impact,sans-serif;font-size:clamp(56px,9vw,128px);margin:0;letter-spacing:.02em;line-height:.92;text-transform:uppercase}
+  .section{padding:32px 0 96px}
+  .label{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 22px;color:var(--dark);text-decoration:none;transition:transform .15s,box-shadow .15s;min-height:140px;display:flex;flex-direction:column;justify-content:space-between}
+  .card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -20px rgba(232,64,30,.25);border-color:var(--orange)}
+  .card.disabled{opacity:.45;cursor:not-allowed;pointer-events:none}
+  .card .month{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:48px;line-height:1;letter-spacing:.02em;text-transform:uppercase}
+  .card .meta{font-size:13px;color:var(--muted);margin-top:8px}
+  .card .arrow{font-size:18px;color:var(--orange);font-weight:700;align-self:flex-end}
+  footer{padding:32px 0 48px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="container crumb"><a href="../">A-Life Reports</a> &nbsp;›&nbsp; <span class="cur">2026</span></div>
+<section class="hero">
+  <div class="arc arc-1"></div>
+  <div class="container"><h1 class="title">2026</h1></div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="label">Choose a month</div>
+    <div class="picker">
+      <a class="card" href="april/">
+        <div class="month">April</div>
+        <div class="meta">BIOS Line · LYSI</div>
+        <div class="arrow">→</div>
+      </a>
+      <div class="card disabled"><div class="month">May</div><div class="meta">Coming next</div><div class="arrow">→</div></div>
+      <div class="card disabled"><div class="month">June</div><div class="meta">—</div><div class="arrow">→</div></div>
+      <div class="card disabled"><div class="month">July</div><div class="meta">—</div><div class="arrow">→</div></div>
+    </div>
+  </div>
+</section>
+<footer>Built by Polar Bear Agency · diell@polarbearagency.com</footer>
+</body>
+</html>

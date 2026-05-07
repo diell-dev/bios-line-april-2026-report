@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A-Life Medica — Reports</title>
+<meta name="description" content="Polar Bear Agency · monthly performance reports for A-Life Medica brands">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4ECDE;--orange:#E8401E;--orange-light:#F5A582;--dark:#1A1A1A;--muted:#6B6B6B;--line:#EADCC4;--white:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,system-ui,sans-serif;color:var(--dark);background:var(--cream);font-size:16px;-webkit-font-smoothing:antialiased;min-height:100vh}
+  a{color:var(--orange);text-decoration:none}
+  .display{font-family:Anton,Impact,sans-serif;letter-spacing:.02em;line-height:.92;text-transform:uppercase}
+  .container{max-width:1100px;margin:0 auto;padding:0 32px}
+  .arc{position:absolute;border:1px solid var(--orange);border-radius:50%;pointer-events:none}
+  .hero{padding:96px 0 64px;position:relative;overflow:hidden}
+  .hero .arc-1{width:780px;height:780px;left:-280px;top:-200px}
+  .hero .arc-2{width:580px;height:580px;right:-200px;top:120px}
+  h1.title{color:var(--orange);font-size:clamp(56px,9vw,128px);margin:0;font-family:Anton,Impact,sans-serif;letter-spacing:.02em;line-height:.92;text-transform:uppercase}
+  .sub{margin-top:24px;font-size:18px;color:var(--dark);max-width:640px;line-height:1.5}
+  .badge{display:inline-block;border:1px solid var(--orange);border-radius:999px;padding:8px 18px;font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--dark);text-transform:uppercase;margin-bottom:24px}
+  .section{padding:48px 0 96px}
+  .label{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 28px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s,box-shadow .15s;min-height:200px;color:var(--dark);text-decoration:none}
+  .card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -20px rgba(232,64,30,.25);border-color:var(--orange)}
+  .card .year{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:80px;line-height:1;letter-spacing:.02em}
+  .card .meta{font-size:13px;color:var(--muted)}
+  .card .arrow{margin-top:18px;font-size:22px;color:var(--orange);font-weight:700}
+  footer{padding:32px 0 48px;text-align:center;color:var(--muted);font-size:12px}
+  @media(max-width:600px){.container{padding:0 20px} .section{padding:32px 0 64px}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="arc arc-1"></div>
+  <div class="arc arc-2"></div>
+  <div class="container">
+    <span class="badge">Presented by Polar Bear Agency</span>
+    <h1 class="title">A-Life<br>Medica<br>Reports</h1>
+    <p class="sub">Performance reports — social media and paid ads — for the A-Life Medica brand portfolio. Choose a year to start.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="label">Year</div>
+    <div class="picker">
+      <a class="card" href="2026/">
+        <div class="year">2026</div>
+        <div>
+          <div style="font-weight:700;font-size:16px;margin-top:8px">Reports available</div>
+          <div class="meta" style="margin-top:4px">April · BIOS Line · LYSI</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>Built by Polar Bear Agency · diell@polarbearagency.com</footer>
+</body>
+</html>
