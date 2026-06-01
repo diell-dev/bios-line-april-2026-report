@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BIOS Line — Social Media + Ads Report — May 2026</title>
+<meta name="description" content="Polar Bear Agency · Social media + paid ads performance report for Bios Line Kosova, May 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4ECDE;--orange:#E8401E;--orange-light:#F5A582;--orange-dark:#9C2A0E;--dark:#1A1A1A;--muted:#6B6B6B;--line:#EADCC4;--white:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,system-ui,sans-serif;color:var(--dark);background:var(--cream);font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--orange);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .display{font-family:Anton,Impact,sans-serif;letter-spacing:.02em;line-height:.92;text-transform:uppercase}
+  .container{max-width:1200px;margin:0 auto;padding:0 32px}
+  .section{padding:96px 0;position:relative;overflow:hidden}
+  .section+.section{border-top:1px solid rgba(0,0,0,.04)}
+  .arc{position:absolute;border:1px solid var(--orange);border-radius:50%;pointer-events:none}
+  .label{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+  .h-display{color:var(--orange);font-size:clamp(56px,9vw,128px);margin:0}
+  .h-section{color:var(--orange);font-size:clamp(40px,6vw,76px);margin:0 0 12px}
+  .h-sub{color:var(--dark);font-weight:600;font-size:20px;margin:0}
+  .small{font-size:13px;color:var(--muted)}
+  .crumb{padding:18px 0 0;font-size:13px;color:var(--muted)}
+  .crumb a{color:var(--muted);font-weight:500}
+  .crumb a:hover{color:var(--orange)}
+  .crumb .cur{color:var(--orange);font-weight:600}
+  .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0 80px;position:relative}
+  .hero .arc-1{width:780px;height:780px;left:-260px;top:-160px}
+  .hero .arc-2{width:680px;height:680px;right:-160px;top:240px}
+  .hero-title span{display:block}
+  .hero-bottom{margin-top:48px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .badge{border:1px solid var(--orange);border-radius:999px;padding:10px 22px;font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--dark);text-transform:uppercase;display:inline-block}
+  .brand-block{text-align:right}
+  .brand-block .brand{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:42px;letter-spacing:.04em}
+  .brand-block .month{color:var(--dark);font-style:italic}
+  .cols{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+  .cols.flip{grid-template-columns:1.4fr 1fr}
+  .breakthrough{background:#fff;border:2px solid var(--orange);border-radius:18px;padding:32px;margin-top:24px}
+  .breakthrough h3{margin:0;color:var(--orange);font-family:Anton,Impact,sans-serif;font-size:32px;letter-spacing:.02em;text-transform:uppercase}
+  .breakthrough p{margin:10px 0 0;font-size:14px;line-height:1.55}
+  .feed-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .feed-grid .tile{aspect-ratio:1/1;background:#000;overflow:hidden;border-radius:6px;position:relative}
+  .feed-grid .tile img{width:100%;height:100%;object-fit:cover;display:block}
+  .feed-grid .tile.reel::after{content:"REEL";position:absolute;top:6px;right:6px;background:var(--orange);color:#fff;font-size:9px;font-weight:700;letter-spacing:.1em;padding:2px 6px;border-radius:3px}
+  .feed-grid .stat-tile{aspect-ratio:1/1;background:var(--orange);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:6px;text-align:center;padding:8px}
+  .stat-tile .big{font-family:Anton,Impact,sans-serif;font-size:42px;line-height:1}
+  .stat-tile .sm{font-size:11px;letter-spacing:.18em;font-weight:700;margin-top:4px}
+  .top-list{display:flex;flex-direction:column;gap:12px}
+  .top-row{display:grid;grid-template-columns:64px 32px 1fr auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px}
+  .top-row img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+  .top-row .rank{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px}
+  .top-row .meta strong{display:block;font-size:14px}
+  .top-row .meta span{display:block;font-size:12px;color:var(--muted)}
+  .top-row .views{text-align:right}
+  .top-row .views b{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px;display:block;line-height:1}
+  .top-row .views .small{font-size:11px}
+  .infl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+  .infl{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start}
+  .infl img{width:80px;height:80px;object-fit:cover;border-radius:8px;flex-shrink:0}
+  .infl strong{display:block;font-size:14px}
+  .infl .handle{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+  .infl .stats{margin-top:6px;font-size:13px}
+  .infl .v{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:24px;line-height:1}
+  .stats-band{background:var(--orange);color:#fff;padding:96px 0;text-align:center}
+  .stats-band h2{font-family:Anton,Impact,sans-serif;color:#fff;font-size:clamp(44px,6vw,72px);margin:0 0 8px;letter-spacing:.04em}
+  .stats-band .sub{opacity:.85;font-style:italic;margin:0 0 36px}
+  .stats-band .ovals{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto;padding:0 32px}
+  .stats-band .oval{border:2px solid #fff;border-radius:50%;aspect-ratio:1.9/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px}
+  .stats-band .oval .l{font-size:11px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;opacity:.95}
+  .stats-band .oval .v{font-family:Anton,Impact,sans-serif;font-size:46px;line-height:1;margin-top:6px}
+  .stats-band .footnote{margin-top:32px;font-size:12px;font-style:italic;opacity:.85}
+  .fb-band{background:#FBF7EE;padding:80px 0;text-align:center;border-bottom:1px solid rgba(0,0,0,.04)}
+  .fb-band h2{font-family:Anton,Impact,sans-serif;color:var(--dark);font-size:clamp(36px,5vw,56px);margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase}
+  .fb-band .sub{color:var(--muted);font-style:italic;margin:0 0 36px}
+  .fb-band .ovals{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:920px;margin:0 auto;padding:0 32px}
+  .fb-band .oval{border:2px solid var(--dark);border-radius:50%;aspect-ratio:1.9/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px}
+  .fb-band .oval .l{font-size:10px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;color:var(--muted)}
+  .fb-band .oval .v{font-family:Anton,Impact,sans-serif;font-size:36px;line-height:1;margin-top:6px;color:var(--dark)}
+  .fb-band .footnote{margin-top:24px;font-size:11px;font-style:italic;color:var(--muted)}
+  .types{max-width:760px;margin:36px auto 0;padding:0 32px;text-align:left}
+  .types h4{margin:0 0 12px;font-size:11px;letter-spacing:.22em;color:var(--muted);font-weight:700;text-transform:uppercase;text-align:center}
+  .type-row{display:grid;grid-template-columns:80px 1fr 50px;gap:12px;align-items:center;font-size:13px;margin-bottom:8px}
+  .type-row .lbl{font-weight:600}
+  .type-row .bar{height:18px;background:#E5DAC1;border-radius:3px;overflow:hidden}
+  .type-row .fill{height:100%;background:var(--orange)}
+  .age{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+  .age-row{display:grid;grid-template-columns:60px 1fr 50px;align-items:center;gap:14px;font-size:14px}
+  .age-row .lbl{font-weight:600}
+  .age-row .bar{height:24px;background:#E5DAC1;border-radius:4px;overflow:hidden}
+  .age-row .fill{height:100%;background:var(--orange-light)}
+  .age-row.top .fill{background:var(--orange)}
+  .age-row .pct{font-weight:700;text-align:right}
+  .geo{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:18px}
+  .geo h4{margin:0 0 10px;font-size:13px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+  .geo .row{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+  .geo .row:first-of-type{border-top:0}
+  .geo .row strong{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:18px}
+  .recs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+  .rec{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;gap:14px;align-items:flex-start}
+  .rec .num{flex:0 0 36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .rec h3{margin:4px 0 6px;font-size:14px;color:var(--orange);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .rec p{margin:0;font-size:13.5px;line-height:1.55}
+  .ad-pending{background:#FFF7E6;border:1px dashed var(--orange);border-radius:12px;padding:22px;margin-top:24px;font-size:14px;line-height:1.55}
+  .ad-pending strong{color:var(--orange)}
+  .thanks{padding:140px 0;text-align:center;position:relative}
+  .thanks .arc-1{width:540px;height:540px;left:50%;top:60px;transform:translateX(-50%)}
+  .thanks h1{margin:0;color:var(--orange);font-family:Anton,Impact,sans-serif;font-size:clamp(86px,16vw,200px);line-height:.95;letter-spacing:.02em}
+  .thanks .badge{margin-top:24px}
+  .thanks .contact{margin-top:18px;color:var(--orange);font-weight:700;letter-spacing:.04em}
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid rgba(0,0,0,.06)}
+  @media(max-width:900px){
+    .container{padding:0 20px}
+    .section{padding:64px 0}
+    .cols,.cols.flip{grid-template-columns:1fr;gap:24px}
+    .feed-grid{grid-template-columns:repeat(3,1fr)}
+    .stats-band .ovals{grid-template-columns:1fr 1fr}
+    .fb-band .ovals{grid-template-columns:repeat(2,1fr)}
+    .recs,.infl-grid{grid-template-columns:1fr}
+    .top-row{grid-template-columns:48px 28px 1fr auto;padding:8px 12px}
+    .top-row img{width:48px;height:48px}
+  }
+</style>
+</head>
+<body>
+
+<div class="container crumb">
+  <a href="../../../">A-Life Reports</a> &nbsp;›&nbsp;
+  <a href="../../">2026</a> &nbsp;›&nbsp;
+  <a href="../">May</a> &nbsp;›&nbsp;
+  <span class="cur">BIOS Line</span>
+</div>
+
+<section class="hero">
+  <div class="arc arc-1"></div>
+  <div class="arc arc-2"></div>
+  <div class="container">
+    <h1 class="display h-display hero-title">
+      <span>Social</span><span>Media</span><span>+ Ads</span><span style="color:var(--orange)">Report</span>
+    </h1>
+    <div class="hero-bottom">
+      <span class="badge">Presented by Polar Bear Agency</span>
+      <div class="brand-block">
+        <div class="brand">BIOS LINE</div>
+        <div class="month">May 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BREAKTHROUGH (banner) -->
+<section class="section" style="padding-top:48px;padding-bottom:48px">
+  <div class="container">
+    <div class="breakthrough">
+      <h3>The Instagram Breakthrough</h3>
+      <p>BIOS Line's Instagram performance exploded in May. <strong>Views jumped from 9.7K to 378.1K (+3,800%)</strong>, profile activity grew +930%, and two influencer Reels (Diola Dosti) drove the bulk of it — <strong>211K and 142K views</strong>, 2,270 and 1,208 likes. Net follower gain: +451 (530 follows / 79 unfollows). This is the playbook LYSI has been running for months — now BIOS Line is on it too.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEED -->
+<section class="section">
+  <div class="container cols flip">
+    <div class="feed-grid">
+      <a class="tile reel" href="https://www.instagram.com/p/DX9KBhXIqgO/" target="_blank"><img src="thumbs/C1_DX9KBhXIqgO.jpg" alt="Magnezi Reel"></a>
+      <a class="tile reel" href="https://www.instagram.com/p/DX_7otHopQ8/" target="_blank"><img src="thumbs/C2_DX_7otHopQ8.jpg" alt="BioKap Reel"></a>
+      <a class="tile" href="https://www.instagram.com/p/DY1oZaJCFSh/" target="_blank"><img src="thumbs/01_DY1oZaJCFSh.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYw4jJOCIJ7/" target="_blank"><img src="thumbs/02_DYw4jJOCIJ7.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYpKFL2CG7X/" target="_blank"><img src="thumbs/03_DYpKFL2CG7X.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYkAjK3iH5P/" target="_blank"><img src="thumbs/04_DYkAjK3iH5P.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYe25YmCE9y/" target="_blank"><img src="thumbs/05_DYe25YmCE9y.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYXIgsrCOhy/" target="_blank"><img src="thumbs/06_DYXIgsrCOhy.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DYR-8zfiCxT/" target="_blank"><img src="thumbs/07_DYR-8zfiCxT.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DX9eKvYIw1U/" target="_blank"><img src="thumbs/08_DX9eKvYIw1U.jpg" alt=""></a>
+      <a class="tile" href="https://www.instagram.com/p/DX1n91XgBaK/" target="_blank"><img src="thumbs/09_DX1n91XgBaK.jpg" alt=""></a>
+      <div class="stat-tile"><div class="big">11</div><div class="sm">Postime<br>Maj</div></div>
+    </div>
+    <div>
+      <h2 class="display h-section">Social<br>Media<br>Feed</h2>
+      <p class="h-sub" style="margin-top:14px">Maj — BIOS Line</p>
+      <p class="small" style="margin-top:6px">11 postime brand-owned + 2 Reels nga influencerët (etiketuar REEL). Klikoni mbi imazhet për të hapur postimet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOP POSTS -->
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Top Postet</h2>
+    <p class="small" style="font-style:italic">Renditja sipas views / engagement — Instagram · Maj 2026</p>
+
+    <h3 style="margin-top:32px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700">Brand-owned (@biosline_kosova)</h3>
+    <div class="top-list">
+      <div class="top-row"><img src="thumbs/06_DYXIgsrCOhy.jpg" alt=""><span class="rank">#1</span><div class="meta"><strong>iSolari Spray SPF 50</strong><span>May 15 · 1.7K views</span></div><div class="views"><b>1.7K</b><div class="small">views</div></div></div>
+      <div class="top-row"><img src="thumbs/08_DX9eKvYIw1U.jpg" alt=""><span class="rank">#2</span><div class="meta"><strong>Tensiolen — qetësi muskujsh</strong><span>May 5 · top engagement</span></div><div class="views"><b>15</b><div class="small">likes+com</div></div></div>
+      <div class="top-row"><img src="thumbs/07_DYR-8zfiCxT.jpg" alt=""><span class="rank">#3</span><div class="meta"><strong>Multi45 — burimi i energjisë</strong><span>May 13</span></div><div class="views"><b>10</b><div class="small">likes</div></div></div>
+      <div class="top-row"><img src="thumbs/03_DYpKFL2CG7X.jpg" alt=""><span class="rank">#4</span><div class="meta"><strong>FerPlus Tre-Tard — hekur</strong><span>May 22</span></div><div class="views"><b>8</b><div class="small">likes</div></div></div>
+      <div class="top-row"><img src="thumbs/04_DYkAjK3iH5P.jpg" alt=""><span class="rank">#5</span><div class="meta"><strong>DHA tanning serum</strong><span>May 20</span></div><div class="views"><b>7</b><div class="small">likes</div></div></div>
+    </div>
+
+    <h3 style="margin-top:48px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700">Influencer collabs — the breakouts</h3>
+    <div class="infl-grid">
+      <div class="infl"><img src="thumbs/C1_DX9KBhXIqgO.jpg" alt=""><div><strong>Diola Dosti — Magnezi (Magensio)</strong><span class="handle">@dioladostiofficial · May 5 · Reel</span><div class="stats"><b class="v">211K</b> views · 2,270 likes · 59 comments</div></div></div>
+      <div class="infl"><img src="thumbs/C2_DX_7otHopQ8.jpg" alt=""><div><strong>Diola Dosti — BioKap (pa amoniak)</strong><span class="handle">@dioladostiofficial · May 6 · Reel</span><div class="stats"><b class="v">142K</b> views · 1,208 likes · 23 comments</div></div></div>
+    </div>
+    <p class="small" style="margin-top:16px"><strong style="color:var(--orange)">2 Reels = ~353K views, 3,478 likes, 82 comments.</strong> Këto janë shtytësit kryesorë të rritjes prej +3,800% në views që pamë në Insights.</p>
+  </div>
+</section>
+
+<!-- AD PLACEHOLDER -->
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Ad Performance</h2>
+    <p class="small" style="font-style:italic">Meta Ads · May 1 — May 31, 2026</p>
+    <div class="ad-pending">
+      <strong>Të dhënat e fushatave janë në pritje.</strong><br>
+      CSV-ja nga Meta Ads Manager për muajin maj ende nuk është uploaded. Sapo të vijë, kjo seksion do të popullohet me: total spend, conversations, cost-per-result, dhe një tabelë për-ad-set me top performer dhe rekomandime.<br><br>
+      <span style="font-size:13px;color:var(--muted)">Për referencë — April: €231 spend, 320 conversations, Anti Age top performer me €0.29/result.</span>
+    </div>
+  </div>
+</section>
+
+<!-- IG STATS (DOMINANT CHANNEL THIS MONTH) -->
+<section class="stats-band">
+  <h2>Instagram Stats</h2>
+  <div class="sub">@biosline_kosova · May 2 – May 31 · the dominant channel this month</div>
+  <div class="ovals">
+    <div class="oval"><div class="l">Followers</div><div class="v">7.6K</div></div>
+    <div class="oval"><div class="l">Views</div><div class="v">378.1K</div></div>
+    <div class="oval"><div class="l">Reach</div><div class="v">3.6K</div></div>
+    <div class="oval"><div class="l">Interactions</div><div class="v">13.0K</div></div>
+    <div class="oval"><div class="l">Profile visits</div><div class="v">3.4K</div></div>
+    <div class="oval"><div class="l">Link taps</div><div class="v">142</div></div>
+  </div>
+  <div class="footnote">Pulled from Instagram mobile app (BIOS Line IG is not connected to Meta Business Manager) · followers +451 net (530 follows / 79 unfollows, +6.3% vs May 1) · profile activity +930% vs April</div>
+</section>
+
+<!-- FB SECONDARY -->
+<section class="fb-band">
+  <div class="container">
+    <h2>Facebook</h2>
+    <div class="sub">May 4 – May 31 · secondary channel · cooled slightly</div>
+    <div class="ovals">
+      <div class="oval"><div class="l">Followers</div><div class="v">21.4K</div></div>
+      <div class="oval"><div class="l">Views</div><div class="v">150.3K</div></div>
+      <div class="oval"><div class="l">Reach</div><div class="v">42.4K</div></div>
+      <div class="oval"><div class="l">Conversations</div><div class="v">285</div></div>
+    </div>
+    <div class="types">
+      <h4>Views by content type (Instagram)</h4>
+      <div class="type-row"><div class="lbl">Reels</div><div class="bar"><div class="fill" style="width:89.6%"></div></div><div style="text-align:right;font-weight:700">89.6%</div></div>
+      <div class="type-row"><div class="lbl">Posts</div><div class="bar"><div class="fill" style="width:7.2%"></div></div><div style="text-align:right;font-weight:700">7.2%</div></div>
+      <div class="type-row"><div class="lbl">Stories</div><div class="bar"><div class="fill" style="width:3.2%"></div></div><div style="text-align:right;font-weight:700">3.2%</div></div>
+    </div>
+    <div class="footnote">FB Views -25.7% MoM, Interactions -20.6%, Conversations -21.3% — paid messaging campaigns reduced. Response rate 84.1%, response time 2h 53m.</div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section class="section">
+  <div class="container cols">
+    <div>
+      <h2 class="display h-section">Social<br>Media<br>Audience</h2>
+      <p class="small" style="margin-top:14px">Instagram followers — May 2026</p>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom:6px">Mosha</div>
+      <div class="age">
+        <div class="age-row top"><div class="lbl">35–44</div><div class="bar"><div class="fill" style="width:100%"></div></div><div class="pct">51.7%</div></div>
+        <div class="age-row"><div class="lbl">25–34</div><div class="bar"><div class="fill" style="width:46%"></div></div><div class="pct">23.9%</div></div>
+        <div class="age-row"><div class="lbl">45–54</div><div class="bar"><div class="fill" style="width:33%"></div></div><div class="pct">17.1%</div></div>
+        <div class="age-row"><div class="lbl">55–64</div><div class="bar"><div class="fill" style="width:8%"></div></div><div class="pct">4.1%</div></div>
+        <div class="age-row"><div class="lbl">18–24</div><div class="bar"><div class="fill" style="width:4%"></div></div><div class="pct">1.9%</div></div>
+        <div class="age-row"><div class="lbl">65+</div><div class="bar"><div class="fill" style="width:2%"></div></div><div class="pct">1.0%</div></div>
+      </div>
+      <p style="margin-top:20px;font-size:14px;line-height:1.55"><strong>Audienca kryesore:</strong> femra 35–44 vjeç (51.7%), pasuar nga 25–34 (23.9%). Të bashkuara, segmenti 25–44 mbulon <strong style="color:var(--orange)">75.6%</strong> të audiencës. <strong>Femra 87.2% / Meshkuj 12.8%.</strong></p>
+
+      <div class="geo">
+        <h4>Top Cities (Instagram, May)</h4>
+        <div class="row"><span>Pristina</span><strong>21.2%</strong></div>
+        <div class="row"><span>Tirana</span><strong>6.4%</strong></div>
+        <div class="row"><span>Prizren</span><strong>4.8%</strong></div>
+        <div class="row"><span>Pejë</span><strong>4.3%</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECS -->
+<section class="section">
+  <div class="container">
+    <h2 class="display h-section">Recommendations</h2>
+    <p class="small" style="font-style:italic">Hapat për muajin e ardhshëm</p>
+    <div class="recs">
+      <div class="rec"><div class="num">1</div><div><h3>Lock the Reel + Influencer playbook</h3><p>2 Reels gjeneruan 353K views dhe 3,478 likes — më shumë se gjithë muaji i prillit. Skalo: 4–6 collab-e/muaj me Diola dhe shto 1–2 nano-creators. Format-i Reel duhet të bëhet default-i për BIOS Line në IG.</p></div></div>
+      <div class="rec"><div class="num">2</div><div><h3>Ngrit ritmin e Reels brand-owned</h3><p>89.6% e views erdhën nga Reels, por brand-owned ende është 100% imazhe statike. Konverto 1–2 postime/javë në Reels (product demo, before/after, "ku ta gjeni"). Engagement-i organik do të rritet shpejt.</p></div></div>
+      <div class="rec"><div class="num">3</div><div><h3>Kapitali i 451 follower-ëve të rinj</h3><p>451 follower-ë të rinj në një muaj është 4× rritja normale. Krijo një Story serie kërkimore për ta — kush janë, çfarë kërkojnë — dhe lëre këtë audiencë të ushqejë creative-in e qershorit.</p></div></div>
+      <div class="rec"><div class="num">4</div><div><h3>Lidh IG me Business Manager</h3><p>Aktualisht IG nuk është i lidhur me Meta Business Manager → s'mund të boost-ojmë reel-et direkt, s'mund të masim conversations nga IG ads. Lidhja merr 5 minuta dhe do na japë shumë më shumë kontroll në qershor.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="thanks">
+  <div class="arc arc-1"></div>
+  <div class="container" style="position:relative">
+    <h1>Thank<br>You</h1>
+    <div><span class="badge">Polar Bear Agency</span></div>
+    <div class="contact">CONTACT US:&nbsp; <a href="mailto:diell@polarbearagency.com">diell@polarbearagency.com</a></div>
+  </div>
+</section>
+
+<footer>BIOS Line — Social Media + Ads Report — May 2026 · Built by Polar Bear Agency</footer>
+</body>
+</html>
