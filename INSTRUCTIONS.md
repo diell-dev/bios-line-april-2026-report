@@ -13,9 +13,9 @@ This document explains how to generate the monthly performance report for **BIOS
 The two brands behave very differently — collect data accordingly.
 
 ### BIOS Line
-- **Facebook Page:** connected to Meta Business Manager. Pull most stats from there.
-- **Instagram (@biosline_kosova):** **NOT connected** to Business Manager. **You must collect IG stats manually from the Instagram mobile app** (Insights tab on the BIOS Line account).
-- **Ads:** Facebook Ads Manager exports (xls/csv).
+- **Facebook Page:** connected to Meta Business Manager. Pull FB stats from there.
+- **Instagram (@biosline_kosova):** **NOW CONNECTED to Business Manager (as of June 2026)** — pull IG stats from Insights with the toggle on Instagram, same as LYSI. No more mobile-app screenshots needed unless you specifically want app-level metrics.
+- **Ads:** Facebook Ads Manager exports (xls/csv). ⚠️ **Filter by BIOS Line campaigns before exporting** — the ad account contains other clients (Taverna Tirona, Diora, etc.) and unfiltered exports create noise. Use the "First 4" campaign naming convention for the main product-messages campaign.
 
 ### LYSI
 - **Facebook Page:** connected (small audience, ~528 followers). Skip or footnote.
@@ -45,14 +45,11 @@ Same as LYSI but with toggle on **Facebook**:
 - Messaging
 - Optional: Content tab (top performing posts)
 
-### 4. Instagram mobile app screenshots — BIOS Line ⚠️
-**These cannot come from Business Manager.** Open the Instagram app on your phone, switch to the BIOS Line account, then in Insights:
-- **Views** screen (total views, follower vs non-follower split, accounts reached)
-- **Views → By content type** (Posts/Stories/Reels split + top performing content tiles with view counts)
-- **Content** list (last 30 days, sorted by views, full grid of post thumbnails with view counts)
-- **Profile activity** (profile visits, external link taps, business address taps)
+### 4. Instagram mobile app screenshots — BIOS Line (optional, no longer required)
+**As of June 2026, BIOS Line's IG is connected to Meta Business Manager**, so IG stats come from the same Business Suite screenshots as LYSI (Results / Audience / Messaging tabs with the toggle on Instagram). The mobile-app screenshots below are only needed if you want app-specific metrics (like Reels engagement breakdown that Business Suite doesn't show in the same way):
+- **Views** screen · **Content by content type** · **Content list** · **Profile activity**
 
-> Tip: pinch-zoom in the IG app to see exact numbers, then screenshot. Send all four to Claude.
+> Historical note: prior to June 2026 these mobile-app screenshots were the only way to get BIOS Line IG data. May 2026 and earlier reports use those; June 2026+ uses Business Suite.
 
 ---
 
@@ -166,8 +163,11 @@ LYSI uses `lysikosova` (no underscore). BIOS Line uses `biosline_kosova` (with u
 ### IG Reels show no like count
 By default Instagram hides like counts on Reels for non-account-owners. Apify's `instagram-post-scraper` returns `likesCount: 0` or just video views. For Reel-heavy reports, prefer view counts (which are public).
 
-### BIOS Line IG stats are missing
-BIOS Line's IG isn't connected to Meta Business Manager. The mobile-app screenshots are the only source. Without them, the BIOS Line IG section will be empty. Always remind the client/team to send those.
+### BIOS Line IG stats (June 2026 onward)
+BIOS Line's IG is now connected to Meta Business Manager. Pull all IG stats from Business Suite Insights with the top-right toggle on Instagram (same as LYSI). If you're doing a backfill for a period before June 2026, you'll still need mobile-app screenshots.
+
+### BIOS ad exports contain multiple clients
+The ad account also runs Taverna Tirona, Diora, Gjakova KCGF, etc. Always filter Ads Manager by campaign name / label = "BIOS Line" before exporting, or manually filter the raw CSV/xls afterwards. In May 2026 only "First 4" was BIOS Line — the rest were other clients.
 
 ### Vercel build fails
 The site is pure static HTML — there's no build step. If a deploy fails, the cause is almost always: file too large, broken HTML/CSS, or invalid `vercel.json`. Check the Vercel deploy logs — they're linked from the GitHub commit page.
@@ -195,4 +195,16 @@ These are the questions every report should answer in the first 10 seconds of sk
 
 When you add a new month, **never edit a published month's report** — leave history intact. A-Life can compare months by clicking back through the navigation.
 
-Last updated: 2026-05-07 (April 2026 reports for BIOS Line and LYSI published).
+Last updated: 2026-06-01 (May 2026 published; June 2026 workflow adjusted for BIOS Line IG now connected to Business Manager).
+
+## Update — June 2026: Meta Ads via connector
+
+As of June 2026, ad campaign data can be pulled directly via the Meta Ads MCP connector — no more CSV exports needed. The connector accesses ad-level performance for all Meta-connected ad accounts.
+
+- **LYSI - A-life** account id: `1463293032171303` (owned by lysikosova business)
+- **Diell Grazhdani** personal account id: `31418707` (contains BIOS Line + other clients; filter needed)
+
+For BIOS Line: query campaigns where `amount_spent > 0` and manually identify BIOS Line campaigns by name pattern (typically "First 4"). Non-BIOS ones in this account: Taverna Tirona ("Shank", "Kerkojme…"), Gjakova KCGF, promotional page boosts.
+
+Organic Insights (Views/Reach/Interactions/Demographics/Messaging) still require Business Suite screenshots — the connector is Ads-only.
+

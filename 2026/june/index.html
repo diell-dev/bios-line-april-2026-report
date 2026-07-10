@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>June 2026 — A-Life Medica Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F4ECDE;--orange:#E8401E;--dark:#1A1A1A;--muted:#6B6B6B;--line:#EADCC4;--white:#fff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,sans-serif;color:var(--dark);background:var(--cream);font-size:16px;min-height:100vh}
+  a{color:var(--orange);text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 32px}
+  .arc{position:absolute;border:1px solid var(--orange);border-radius:50%;pointer-events:none}
+  .crumb{padding:24px 0 0;font-size:13px;color:var(--muted)}
+  .crumb a{color:var(--muted);font-weight:500}
+  .crumb a:hover{color:var(--orange)}
+  .crumb .cur{color:var(--orange);font-weight:600}
+  .hero{padding:48px 0 32px;position:relative;overflow:hidden}
+  .hero .arc-1{width:580px;height:580px;left:-200px;top:-160px}
+  h1.title{color:var(--orange);font-family:Anton,Impact,sans-serif;font-size:clamp(56px,9vw,128px);margin:0;letter-spacing:.02em;line-height:.92;text-transform:uppercase}
+  .sub{margin-top:16px;color:var(--muted);font-style:italic}
+  .section{padding:32px 0 96px}
+  .label{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 28px;color:var(--dark);text-decoration:none;transition:.15s;min-height:240px;display:flex;flex-direction:column;justify-content:space-between}
+  .card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -20px rgba(232,64,30,.25);border-color:var(--orange)}
+  .card .name{font-family:Anton,Impact,sans-serif;color:var(--orange);font-size:64px;line-height:1;letter-spacing:.02em;text-transform:uppercase}
+  .card .desc{margin-top:14px;font-size:14px;color:var(--dark);line-height:1.5}
+  .card ul{margin:14px 0 0;padding-left:18px;font-size:13px;color:var(--muted);line-height:1.7}
+  .card .arrow{font-size:22px;color:var(--orange);font-weight:700;align-self:flex-end}
+  footer{padding:32px 0 48px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="container crumb"><a href="../../">A-Life Reports</a> &nbsp;›&nbsp; <a href="../">2026</a> &nbsp;›&nbsp; <span class="cur">June</span></div>
+<section class="hero">
+  <div class="arc arc-1"></div>
+  <div class="container">
+    <h1 class="title">June<br>2026</h1>
+    <div class="sub">Reporting period: June 1 – June 30, 2026</div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="label">Choose a brand</div>
+    <div class="picker">
+      <a class="card" href="bios-line/">
+        <div>
+          <div class="name">Bios Line</div>
+          <div class="desc">The May Reel bump wore off, but the brand is bigger than April. Ad CPR dropped after creative refresh.</div>
+          <ul>
+            <li>IG: 116.5K views (still 12× April · -69% vs May)</li>
+            <li>FB: 171.6K views (+14% vs May)</li>
+            <li>Ad CPR: <strong style="color:#0D7C66">€0.81</strong> (↓15% from €0.95)</li>
+            <li>Only 1 Diola collab: <strong>852 likes</strong></li>
+          </ul>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="lysi/">
+        <div>
+          <div class="name">LYSI</div>
+          <div class="desc">3rd consecutive month of decline. Ad spend cut in half. Time for a strategic reset.</div>
+          <ul>
+            <li>IG Views: 332.1K (-42% MoM · 3-month decline)</li>
+            <li>FB collapsed: Views -74.7%, Link clicks -92.7%</li>
+            <li>Ad spend: €108 (halved vs May's €272)</li>
+            <li>Bright spot: user-repost got 54 likes</li>
+          </ul>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+<footer>Built by Polar Bear Agency · diell@polarbearagency.com</footer>
+</body>
+</html>
